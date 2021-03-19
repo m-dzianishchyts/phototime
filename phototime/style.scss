@@ -1,0 +1,213 @@
+@import "style-reset.scss";
+@import "icons-font.css";
+
+@font-face {
+	font-family: "GothamRnd";
+	src: url("assets/fonts/GothamRnd-Book.eot");
+	src: local("☺"), url("assets/fonts/GothamRnd-Book.woff") format("woff"),
+		url("assets/fonts/GothamRnd-Book.ttf") format("truetype"),
+		url("assets/fonts/GothamRnd-Book.svg") format("svg");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "GothamRounded-Medium";
+	src: url("assets/fonts/GothamRounded-Medium.eot");
+	src: local("☺"),
+		url("assets/fonts/GothamRounded-Medium.woff") format("woff"),
+		url("assets/fonts/GothamRounded-Medium.ttf") format("truetype"),
+		url("assets/fonts/GothamRounded-Medium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "GothamRnd";
+	src: url("assets/fonts/GothamRnd-Bold.eot");
+	src: local("☺"), url("assets/fonts/GothamRnd-Bold.woff") format("woff"),
+		url("assets/fonts/GothamRnd-Bold.ttf") format("truetype"),
+		url("assets/fonts/GothamRnd-Bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+$fontFamily: "GothamRnd";
+$maxWidth: 1280px;
+$md1: $maxWidth + 12px;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+$textColor: #373737;
+$firstThemeColor: #16a085;
+$secondThemeColor: #1abc9c;
+$sectionBackgroundColor: #f5f6f7;
+
+body {
+	font-family: $fontFamily;
+	color: $textColor;
+}
+
+.title {
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 5.5px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.subtitle {
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	color: #fff;
+	text-transform: lowercase;
+}
+
+.button {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 20px 30px 15px 30px;
+	background-color: $firstThemeColor;
+	border-radius: 5px;
+	transition: background-color 0.3s ease 0s;
+	&:hover {
+		background-color: $secondThemeColor;
+	}
+}
+
+._container {
+	width: $maxWidth;
+	margin: 0px auto;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	position: absolute;
+	padding: 50px 0px 0px 0px;
+	left: 0px;
+	right: 0px;
+
+	// .header__content
+
+	&__content {
+		margin: 0px auto;
+	}
+}
+.menu {
+	// .menu__list
+
+	&__list {
+		width: 750px;
+		margin: 0px auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	// .menu__link
+
+	&__link {
+		display: inline-block;
+		padding: 5px;
+		text-align: center;
+		font-size: 15px;
+		letter-spacing: 3px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #fff;
+		transition: color 0.3s ease 0s;
+		&:hover {
+			color: $firstThemeColor;
+		}
+	}
+
+	&__image {
+		width: 55px;
+		margin: 0px 30px;
+		position: relative;
+		bottom: 15px;
+		filter: grayscale(100%) brightness(200%);
+	}
+}
+
+.motto {
+	// .motto__container
+
+	&__container {
+		background: url("assets/background.png") center / cover no-repeat;
+		text-align: center;
+	}
+
+	// .motto__content
+
+	&__content {
+		padding: 338px 0px 0px 0px;
+		margin: 0px 0px 223px 0px;
+		text-align: center;
+	}
+
+	// .motto__title
+
+	&__title {
+		margin: 0px 0px 13px 0px;
+	}
+
+	// .motto__subtitle
+
+	&__subtitle {
+		margin: 0px 0px 27px 0px;
+	}
+
+	// .motto__button
+
+	&__button {
+		display: inline-flex;
+	}
+}
+
+.social {
+	// .social__body
+
+	&__body {
+		width: 750px;
+		margin: 0px auto;
+		padding: 0px 0px 25px 0px;
+	}
+
+	// .social__list
+
+	&__list {
+		display: inline-flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	// .social__link
+
+	&__link {
+		position: relative;
+		padding: 8px;
+		font-size: 20px;
+		color: #fff;
+		transition: color 0.3s ease 0s;
+		&:hover {
+			bottom: 5px;
+			color: $firstThemeColor;
+		}
+	}
+}

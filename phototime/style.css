@@ -152,7 +152,7 @@ body {
   background-color: #1abc9c;
 }
 
-._container {
+.container {
   width: 1280px;
   margin: 0px auto;
 }
@@ -428,4 +428,48 @@ body {
   width: 370px;
   height: 243px;
   margin: 0px 24px 20px 0px;
+}
+.subscribe__container {
+  background: url(assets/hand_phone2.png) top/cover no-repeat;
+}
+.subscribe__content {
+  display: flex;
+  flex-direction: column;
+  padding: 347px 0px 325px 0px;
+  align-items: center;
+}
+.subscribe__title {
+  font-size: 24px;
+  letter-spacing: 3.6px;
+  color: #fff;
+  margin: 0px 0px 32px 0px;
+}
+.form__email {
+  padding: 0px 0px 0px 20px;
+  font-size: 16px;
+  letter-spacing: 2.3px;
+  line-height: 60px;
+  flex: 1 0;
+}
+
+.text-field__container {
+  display: flex;
+  width: 342px;
+  height: 60px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.text-field__submit {
+  padding: 2px 0px 0px 10px;
+  font-size: 16px;
+  width: 63px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  background-color: #16a085;
+  transition: all 0.3s ease 0s;
+}
+.text-field__submit:hover {
+  background-color: #1abc9c;
+  font-size: 20px;
 }

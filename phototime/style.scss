@@ -93,7 +93,7 @@ body {
 	}
 }
 
-._container {
+.container {
 	width: $maxWidth;
 	margin: 0px auto;
 }
@@ -481,7 +481,6 @@ body {
 }
 
 .gallery {
-	
 	// .gallery__controls
 
 	&__controls {
@@ -514,5 +513,77 @@ body {
 	// .gallery__image
 
 	&__image {
+	}
+}
+
+.subscribe {
+	// .subscribe__container
+
+	&__container {
+		background: url(assets/hand_phone2.png) top / cover no-repeat;
+	}
+
+	// .subscribe__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		padding: 347px 0px 325px 0px;
+		align-items: center;
+	}
+
+	// .subscribe__title
+
+	&__title {
+		font-size: 24px;
+		letter-spacing: 3.6px;
+		color: #fff;
+		margin: 0px 0px 32px 0px;
+	}
+
+	// .subscribe__form
+
+	&__form {
+	}
+}
+
+.form {
+	// .form__email
+
+	&__email {
+		padding: 0px 0px 0px 20px;
+		font-size: 16px;
+		letter-spacing: 2.3px;
+		line-height: 60px;
+		flex: 1 0;
+	}
+}
+
+.text-field {
+	// .text-field__container
+
+	&__container {
+		display: flex;
+		width: 342px;
+		height: 60px;
+		border-radius: 3px;
+		overflow: hidden;
+	}
+
+	// .text-field__submit
+
+	&__submit {
+		padding: 2px 0px 0px 10px;
+		font-size: 16px;
+		width: 63px;
+		line-height: 60px;
+		text-align: center;
+		color: #fff;
+		background-color: $firstThemeColor;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			background-color: $secondThemeColor;
+			font-size: 20px;
+		}
 	}
 }

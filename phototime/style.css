@@ -114,19 +114,24 @@ body {
 }
 
 .title {
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 5.5px;
-  color: #fff;
   text-transform: uppercase;
 }
 
-.subtitle {
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 3px;
-  color: #fff;
-  text-transform: lowercase;
+.text {
+  font-size: 12px;
+  letter-spacing: 1.7px;
+  word-spacing: 0.5px;
+  line-height: 24.5px;
+}
+.text__bold {
+  font-weight: bold;
+}
+.text__border-shape {
+  height: 100%;
+  width: 100%;
+  float: right;
+  shape-outside: polygon(65% 100%, 85% 40%, 100% 40%, 100% 100%);
 }
 
 .button {
@@ -138,9 +143,9 @@ body {
   letter-spacing: 2px;
   color: #fff;
   text-transform: uppercase;
-  padding: 20px 30px 15px 30px;
+  padding: 20px 30px 15px;
   background-color: #16a085;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: background-color 0.3s ease 0s;
 }
 .button:hover {
@@ -210,9 +215,17 @@ body {
   text-align: center;
 }
 .motto__title {
+  font-size: 36px;
+  letter-spacing: 5.5px;
+  color: #fff;
   margin: 0px 0px 13px 0px;
 }
 .motto__subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #fff;
+  text-transform: lowercase;
   margin: 0px 0px 27px 0px;
 }
 .motto__button {
@@ -234,9 +247,126 @@ body {
   padding: 8px;
   font-size: 20px;
   color: #fff;
-  transition: color 0.3s ease 0s;
+  bottom: 0px;
+  transition: all 0.3s ease 0s;
 }
 .social__link:hover {
   bottom: 5px;
   color: #16a085;
+}
+
+.get-started__container {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+}
+.get-started__content {
+  display: flex;
+  overflow: hidden;
+  padding: 108px 0px 90px 0px;
+}
+.get-started__background {
+  justify-self: center;
+  width: 100%;
+  position: absolute;
+  z-index: -5;
+}
+.get-started__column {
+  margin: 0px 10%;
+  width: 35%;
+}
+.get-started__title {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2.6px;
+  word-spacing: 1px;
+  color: #16a085;
+  margin: 0px 0px 37px 0px;
+}
+.get-started__text-wrapper {
+  display: flex;
+  margin: 0px 0px 43px 0px;
+}
+.get-started__button {
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+.promo__container {
+  background-color: #fff;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  padding: 142px 0px 80px 0px;
+}
+.promo__content {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.promo__column {
+  margin: 0px 0px 0px 11.1111111111%;
+  width: 38.8888888889%;
+  z-index: 5;
+}
+.promo__title {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2.6px;
+  word-spacing: 1px;
+  color: #16a085;
+  margin: 0px 0px 34px 0px;
+}
+.promo__text-wrapper {
+  display: flex;
+  margin: 0px 0px 36px 0px;
+}
+.promo__text {
+  line-height: 22.5px;
+  letter-spacing: 1.7px;
+  word-spacing: 0.9px;
+}
+.promo__button {
+  padding: 19px 44px 17px;
+  border-radius: 0px;
+  margin: 0px 0px 41px 0px;
+}
+.promo__image {
+  padding: 5px 0px 0px 125px;
+  position: absolute;
+}
+.controls {
+  display: inline-block;
+}
+.controls__position {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  word-spacing: 0px;
+  line-height: 22px;
+  font-weight: bold;
+}
+.controls__current-page {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+.controls__delimiter {
+  display: inline-block;
+}
+.controls__pages-amount {
+  display: inline-block;
+}
+.controls__buttons {
+  margin: 0px -5px;
+  display: flex;
+  justify-content: space-between;
+}
+.controls__nav-button {
+  padding: 2px 5px;
+  background-color: #fff;
+  font-size: 16px;
+}
+.controls__nav-button:hover {
+  color: #1abc9c;
 }

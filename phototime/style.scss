@@ -587,3 +587,97 @@ body {
 		}
 	}
 }
+
+.download {
+	// .download__container
+
+	&__container {
+		background-color: $sectionBackgroundColor;
+	}
+
+	// .download__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 896px;
+		margin: 0px auto;
+		padding: 90px 0px 115px 0px;
+		text-align: center;
+	}
+
+	// .download__title
+
+	&__title {
+		font-size: 20px;
+		letter-spacing: 3px;
+		padding: 0px 0px 7px 0px;
+	}
+
+	// .download__text
+
+	&__text {
+		font-size: 12px;
+		letter-spacing: 1.8px;
+		line-height: 23px;
+		text-transform: uppercase;
+		margin: 0px 0px 40px 0px;
+	}
+
+	// .download__options
+
+	&__options {
+		width: 620px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	// .download__option
+
+	&__option {
+		display: flex;
+		width: 295px;
+		height: 55px;
+		background-color: $firstThemeColor;
+		color: #fff;
+	}
+
+	// .download__button
+
+	&__button {
+		flex: 1 0;
+		color: inherit;
+		font-size: 16px;
+		letter-spacing: 2.2px;
+		font-weight: bold;
+		text-align: left;
+		padding: 3px 0px 0px 25px;
+		text-transform: uppercase;
+		transition: background-color 0.3s ease 0s;
+		background-color: $secondThemeColor;
+		&:hover {
+			background-color: $firstThemeColor;
+		}
+	}
+	
+	// .download__android-special
+
+	&__android-special {
+		font-size: 18px;
+		letter-spacing: 3px;
+	}
+
+	// .download__icon
+
+	&__icon {
+		color: inherit;
+		font-size: 24px;
+		width: 55px;
+		line-height: 55px;
+		&.icon-android {
+			font-size: 40px;
+		}
+	}
+}

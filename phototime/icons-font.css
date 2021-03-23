@@ -26,6 +26,9 @@
 }
 
 
+.icon-android:before {
+  content: "\e906";
+}
 .icon-check:before {
   content: "\e905";
 }
@@ -46,7 +49,4 @@
 }
 .icon-apple:before {
   content: "\eabe";
-}
-.icon-android:before {
-  content: "\eac0";
 }

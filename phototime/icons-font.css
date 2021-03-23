@@ -25,15 +25,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-camera:before {
-  content: "\e900";
+
+.icon-check:before {
+  content: "\e905";
+}
+.icon-left-arrow:before {
+  content: "\e903";
+}
+.icon-right-arrow:before {
+  content: "\e904";
 }
 .icon-dribbble:before {
-  content: "\e901";
+  content: "\e900";
 }
 .icon-flickr:before {
-  content: "\e902";
+  content: "\e901";
 }
 .icon-twitter:before {
-  content: "\e903";
+  content: "\e902";
+}
+.icon-apple:before {
+  content: "\eabe";
+}
+.icon-android:before {
+  content: "\eac0";
 }

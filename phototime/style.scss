@@ -53,6 +53,15 @@ body {
 	text-transform: uppercase;
 }
 
+.main-title {
+	font-size: 48px;
+	font-weight: 700;
+	letter-spacing: 15px;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0px 0px 52px 0px;
+}
+
 .text {
 	font-size: 12px;
 	letter-spacing: 1.7px;
@@ -167,7 +176,7 @@ body {
 	// .motto__content
 
 	&__content {
-		padding: 338px 0px 0px 0px;
+		padding: 238px 0px 0px 0px;
 		margin: 0px 0px 223px 0px;
 		text-align: center;
 	}
@@ -382,21 +391,19 @@ body {
 	// .controls__current-page
 
 	&__current-page {
-		display: inline-block;
-		padding: 0px;
-		margin: 0px;
 	}
 
 	// .controls__delimiter
 
 	&__delimiter {
-		display: inline-block;
+		&::before {
+			content: "/";
+		}
 	}
 
 	// .controls__pages-amount
 
 	&__pages-amount {
-		display: inline-block;
 	}
 
 	// .controls__buttons
@@ -413,6 +420,7 @@ body {
 		padding: 2px 5px;
 		background-color: inherit;
 		font-size: 16px;
+		transition: color 0.3s ease 0s;
 		&:hover {
 			color: $secondThemeColor;
 		}
@@ -603,7 +611,7 @@ body {
 		align-items: center;
 		width: 896px;
 		margin: 0px auto;
-		padding: 90px 0px 115px 0px;
+		padding: 90px 0px 117px 0px;
 		text-align: center;
 	}
 
@@ -638,8 +646,10 @@ body {
 
 	&__option {
 		display: flex;
-		width: 295px;
+		width: 296px;
 		height: 55px;
+		border-radius: 3px;
+		overflow: hidden;
 		background-color: $firstThemeColor;
 		color: #fff;
 	}
@@ -652,16 +662,16 @@ body {
 		font-size: 16px;
 		letter-spacing: 2.2px;
 		font-weight: bold;
+		text-transform: uppercase;
 		text-align: left;
 		padding: 3px 0px 0px 25px;
-		text-transform: uppercase;
 		transition: background-color 0.3s ease 0s;
 		background-color: $secondThemeColor;
 		&:hover {
 			background-color: $firstThemeColor;
 		}
 	}
-	
+
 	// .download__android-special
 
 	&__android-special {
@@ -677,7 +687,96 @@ body {
 		width: 55px;
 		line-height: 55px;
 		&.icon-android {
-			font-size: 40px;
+			font-size: 28px;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.footer {
+	// .footer__container
+
+	&__container {
+	}
+
+	// .footer__content
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		padding: 1px 0px 0px 0px;
+		margin: 0px 128px;
+	}
+
+	// .footer__info
+
+	&__info {
+		padding: 44px 0px 35px 0px;
+		font-size: 14px;
+		letter-spacing: 2.1px;
+		font-weight: bold;
+	}
+
+	// .footer__menu
+
+	&__menu {
+	}
+
+	// .footer__copyright
+
+	&__copyright {
+	}
+
+	// .footer__logos
+
+	&__logos {
+		display: flex;
+		margin: 0px -10px;
+	}
+
+	// .footer__logo-container
+
+	&__logo-container {
+		position: relative;
+		height: 100%;
+		min-width: 55px;
+		margin: 0px 10px;
+	}
+
+	// .footer__logo
+
+	&__logo {
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		margin: auto;
+	}
+}
+
+.footer-menu {
+	text-transform: uppercase;
+	margin: 0px 0px 22px 0px;
+
+	// .footer-menu__item
+
+	&__item {
+		margin: 0px -5px;
+		padding: 5px;
+		transition: color 0.3s ease 0s;
+		&:hover {
+			cursor: pointer;
+			color: $firstThemeColor;
+		}
+	}
+
+	// .footer-menu__delimiter
+
+	&__delimiter {
+		&::before {
+			content: "|";
+			color: $firstThemeColor;
 		}
 	}
 }
